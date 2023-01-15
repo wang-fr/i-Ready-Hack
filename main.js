@@ -5,7 +5,7 @@ let welcomeModalSeen = false
 let injectionError = () => iReadyFramework.ui.openModal('Error', 'You injected after opening a lesson.', window.location.reload());
 //lesson skipper
 if (window['html5Iframe'] === undefined || window['html5Iframe'] === null) {
-    fetch("https://raw.githubusercontent.com/no9999999/yes/main/app-12.chunk.js").then(r => r.text()).then(r => eval(r))
+    fetch("https://raw.githubusercontent.com/no9999999/i-Ready-Hack/main/app-12.chunk.js").then(r => r.text()).then(r => eval(r))
 } else {
     injectionError(), welcomeModalOpen = true;
 }
